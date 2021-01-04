@@ -57,8 +57,7 @@ $ cd packages/client && npm test
 </div>
 
 <div align="center">
-	<img src="https://my-image-hosting.s3.amazonaws.com/architecture-tribe-location-chat+(2).png
-" />
+	<img src="https://my-image-hosting.s3.amazonaws.com/architecture-tribe-location-chat+(2).png" />
 </div>
 
 <p align="center">
