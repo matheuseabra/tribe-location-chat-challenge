@@ -1,0 +1,19 @@
+{
+  "name": "tribe-location-chat-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "private": true,
+  "scripts": {
+    "dev:server": "cd packages/server && yarn dev:server",
+    "dev:client": "cd packages/client && yarn start"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
