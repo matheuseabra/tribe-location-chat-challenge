@@ -2,6 +2,8 @@
 
 A location-based chat in real time, developed with React, TypeScript, Node.js and MongoDB.
 
+[See a video demo.](https://www.loom.com/share/e7bad1145ad14a7f845fa1caba532a33)
+
 ## Quickstart setup
 
 For use, you need clone and run this steps from your command line:
@@ -56,13 +58,11 @@ $ cd packages/client && npm test
 	<img src="https://my-image-hosting.s3.amazonaws.com/Screenshot+from+2021-01-04+16-05-42.png" />
 </div>
 
+## High-level Architecture
+
 <div align="center">
 	<img src="https://my-image-hosting.s3.amazonaws.com/architecture-tribe-location-chat+(2).png" />
 </div>
-
-<p align="center">
-    <a href="https://www.loom.com/share/e7bad1145ad14a7f845fa1caba532a33">See a Video Demo</a>
-</p>
 
 ## Technologies
 
