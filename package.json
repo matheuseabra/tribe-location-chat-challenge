@@ -9,6 +9,8 @@
   },
   "private": true,
   "scripts": {
+    "build:client": "cd packages/client && npm run build",
+    "build:server": "cd packages/server && npm run build",
     "dev:server": "cd packages/server && yarn dev:server",
     "dev:client": "cd packages/client && yarn start"
   },
