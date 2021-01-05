@@ -38,13 +38,7 @@ Open http://localhost:3000 to view the app in the browser.
 
 ```bash
 
-# Run tests on the server
-
 $ cd packages/server && npm test
-
-# Run tests on the client
-
-$ cd packages/client && npm test
 
 ```
 
