@@ -56,7 +56,7 @@ const ChatMap: React.FC = () => {
   }, [location]);
 
   const socket = useMemo(() => {
-    return socketio('http://df214814c77b.ngrok.io');
+    return socketio('http://localhost:3333');
   }, []);
 
   const fetchMessages = useCallback(() => {
