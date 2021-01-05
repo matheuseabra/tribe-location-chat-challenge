@@ -6,7 +6,7 @@ A location-based chat in real time, developed with React, TypeScript, Node.js an
 
 ## Quickstart setup
 
-For use, you need clone and run this steps from your command line:
+Follow these instructions in order to have a clone version of the project up and running in development mode:
 
 ```bash
 
@@ -69,6 +69,10 @@ $ cd packages/server && npm test
 - [MongoDB](https://www.mongodb.com/)
 - [Jest](https://jestjs.io/)
 - [Yarn Workspaces](https://www.yarnpkg.com/)
+
+## Trade-offs
+
+Instead of doing complex Haversine Formula in order to know which messages are within a certain latitude/longitude range, I took advantage of the $near and $maxDistance operators from mongoose ORM in order to query messages being displayed in the map.
 
 ## License
 
