@@ -34,7 +34,7 @@ interface ILocation {
 }
 
 const Map = ReactMapboxGl({
-  accessToken: `${process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}`,
+  accessToken: 'pk.eyJ1IjoibWF0aGV1c2VhYnJhIiwiYSI6ImNqcWQ3MWFhMjRmank0MnVsZXh2M2x2aXAifQ.ecFLtH3EITIcIztT2xYaSA',
 });
 
 const ChatMap: React.FC = () => {
@@ -45,24 +45,21 @@ const ChatMap: React.FC = () => {
   const [currentLocation, setCurrentLocation] = useState<Array<number> | null>(
     [],
   );
+  const {
+    name,
+    coordinates: { longitude, latitude },
+  } = location.state;
 
   useEffect(() => {
-    const {
-      name,
-      coordinates: { longitude, latitude },
-    } = location.state;
     setCurrentUsername(name);
     setCurrentLocation([longitude, latitude]);
   }, [location]);
 
   const socket = useMemo(() => {
-    return socketio(`${process.env.REACT_APP_API_URL}`);
+    return socketio('http://df214814c77b.ngrok.io');
   }, []);
 
   const fetchMessages = useCallback(() => {
-    const {
-      coordinates: { longitude, latitude },
-    } = location.state;
     api.get(`/messages?long=${longitude}&latt=${latitude}`).then(response => {
       setMessages(response.data);
     });
@@ -98,10 +95,6 @@ const ChatMap: React.FC = () => {
       setMessages(state => [...state, data]);
     });
   }, [socket]);
-
-  const {
-    coordinates: { longitude, latitude },
-  } = location.state;
 
   return (
     <>
