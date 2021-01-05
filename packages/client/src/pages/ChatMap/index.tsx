@@ -34,7 +34,7 @@ interface ILocation {
 }
 
 const Map = ReactMapboxGl({
-  accessToken: `${process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}`,
+  accessToken: 'pk.eyJ1IjoibWF0aGV1c2VhYnJhIiwiYSI6ImNqcWQ3MWFhMjRmank0MnVsZXh2M2x2aXAifQ.ecFLtH3EITIcIztT2xYaSA',
 });
 
 const ChatMap: React.FC = () => {
